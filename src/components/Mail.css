@@ -1,0 +1,52 @@
+.Mail{
+    flex:0.8;
+    width: 1300px;
+    overflow: scroll;
+}
+.mailTool{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.mailToolLeft{
+    display: flex;
+
+}
+.mailToolRight{
+    display: flex;
+}
+.mailBody{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 10px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 1px 5px 7px 0px;
+}
+.mailImp{
+    padding: 10px;   
+    color: gold;
+}
+.mailBodyHeader{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    padding: 10px;
+    margin-right: 100px;
+}
+.mailBodyHeader >.mailBodyTitle{
+    font-weight: 400;
+}
+.mailBodyHeader>.mailBodyTime
+{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 200;
+    right: 100px;
+}
+.mailMessage{
+    padding :10px;
+    margin-right: 20px;
+    overflow-wrap: break-word;
+}
