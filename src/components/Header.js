@@ -7,7 +7,16 @@ import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AppsIcon from '@mui/icons-material/Apps';
+import { useDispatch  } from 'react-redux';
+import { logout } from '../features/userSlice';
+import { auth } from '../firebase';
 function Header() {
+    const dispatch=useDispatch();
+    const signOut = () =>{
+        auth.signOut().then(()=>{
+            dispatch(logout())
+        })
+    }
   return (
     <div className='header'>
         <div className="headerLeft">
@@ -32,7 +41,7 @@ function Header() {
                 <AppsIcon/>
             </IconButton>
             <IconButton> 
-                <Avatar/>
+                <Avatar onClick={signOut}  />
             </IconButton> 
         </div>
 

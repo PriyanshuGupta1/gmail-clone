@@ -13,8 +13,11 @@
 
 .headerLeft >img{
     object-fit: contain;
-    height:25px;
+    height:40px !important;
     margin-left: 10px;
+    align-items: center;
+    padding-top:10px ;
+    padding-bottom:10px ;
 }
 .headerLeft> img:hover{
     cursor: pointer;
@@ -27,7 +30,7 @@
     border-radius: 8px;
     align-items: center;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     /* width: 800px; */
 }
 .headerMiddle > input{
@@ -35,9 +38,10 @@
     width: 100%;
     padding: 10px;
     border: none;
+    outline: none;
     background-color: whitesmoke;
     text-decoration: none;
-    outline-width: none;
+    /* outline-width: none; */
     font-size: medium;
 }
 .headerMiddle > .MuiSvgIcon-root{
