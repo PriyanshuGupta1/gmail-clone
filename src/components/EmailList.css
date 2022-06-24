@@ -1,5 +1,5 @@
 .emailList
-{
+{position: sticky;
     flex:1;
     /* overflow:scroll; */
     width: 1300px;
@@ -7,7 +7,7 @@
 }
 .emailListSetting
 {
-    position: sticky;
+    position: sticky;   
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -23,4 +23,7 @@
     background-color: white;
     border-bottom: 1px solid whitesmoke;
     z-index :999;
+}
+.emailListList{
+    padding-bottom: 20%;
 }

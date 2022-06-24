@@ -1,0 +1,9 @@
+.app{
+    height: 100vh;
+}
+.appBody
+{
+    display: flex;
+    
+    height: 90vh;
+}

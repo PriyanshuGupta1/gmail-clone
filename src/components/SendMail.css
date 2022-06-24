@@ -1,14 +1,16 @@
 .sendMail
 {
     position: absolute;
-    bottom: 0px;
-    right:50px;
-    width: 50%;
-    height: 50%;
-    background-color: black;
+    bottom: 0;
+    right: 50px;
+    background-color: #404040;
+    width: 40%;
     max-width: 500px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid whitesmoke;
     display: flex;
     flex-direction: column;
     border :1px solid whitesmoke;
@@ -56,5 +58,5 @@
     text-align: right;
 }
 .sendMailOption{
-    background-color: black;
+    background-color: #404040;
 }
